@@ -1,0 +1,551 @@
+
+
+/* Define o conteúdo para preencher toda a largura e altura da página */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Define a fonte 'arimo' e seu arquivo de fonte. */
+@font-face {
+    font-family: 'arimo';
+    src: url('Arimo-VariableFont_wght.ttf');
+}
+
+/* Estilos globais para redefinir margens, preenchimentos e caixa-modelo em todos os elementos. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página, incluindo a cor de fundo, fonte e cor do texto. */
+body {
+    /*background: #e47137a4;*/
+    background: #fff;
+    
+    font-family:  sans-serif;
+    color: #333;
+}
+
+/* Barra de navegação universal (todas as telas) */
+nav{
+    padding: 0px;
+    background-image: linear-gradient(to left, #37051d, #68002c, #9c0032, #cf002e, #ff001b);
+    height: 50px;
+    
+}
+
+.pitang {
+    margin: 12px auto; 
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-bottom: 2px;
+    height: 45px;
+}
+
+.link_da_pitang{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to left, #37051d, #68002c, #9c0032, #cf002e, #ff001b);
+    padding-top: 8px;
+    text-align: center;
+}
+nav a {
+    color: #fff; /* Cor do texto para links */
+    text-decoration: none;
+    font-size: 13.5px;
+    margin-right: 20px;
+    
+}
+/* Fim dos estilos para barra de navegação universal */
+#filtroCnpjNome {
+    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui a largura da borda no cálculo da largura total */
+    
+    text-align: center;
+}
+/*Estilos para a página de listagem de cliente*/
+#listaClientes{
+    background-color: #ffffff;
+    font-family: 'Open Sans';
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.filtro {
+
+display: flex;
+    
+}
+
+
+#pageTitleListagem{
+    font-family: 'Open Sans';
+    color: #000000;
+    font-weight: normal;
+}
+/*Fim dos estilos para listagem do cliente*/
+
+/* Estilos para a seção principal (main), incluindo margens, preenchimento, cor de fundo, borda arredondada e sombra. */
+main {
+    margin: 50px auto; /* Alterado para centralizar verticalmente e horizontalmente */
+    padding: 20px;
+    max-width: 600px;
+    font-family: 'Open Sans';
+    color: #000;
+}
+/* Estilos específicos para a página de visualizar cliente*/
+#dadosCliente{
+    font-family: 'Open Sans';
+    color: #000000;
+    margin-left: 700px;
+}
+
+#clienteDetails{
+    text-align: center;
+}
+#cnpjCampo{
+    font-family: 'Open Sans';
+    font-size: 17px;
+    padding-right: 200px;
+    padding-top: 25px;
+    max-width: 300px;
+    color: #000000;
+    border-radius: 12px;
+    height: 70px;
+    text-align: center;
+   
+    
+}
+#cnpjCliente{
+    color: #000000;
+}
+
+#nomeCampo{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #f8f8ff;
+    text-align: left;
+}
+
+#nomeCliente{
+    color: #000000;
+    font-size: 13px;
+    text-align: left;
+    margin-right: 200px;
+}
+#enderecoCampo{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #000000;
+    border-radius: 12px;
+    height: 43px;
+    text-align: left;
+    padding-left: 8px;
+    background:#ff001b;
+    padding-top: 10px;
+    
+}
+#enderecoCliente{
+    color: #000000;
+    font-size: 13px;
+    max-width: 800px;
+    display: inline-block;
+}
+#emailCampo{
+    font-family: 'Open Sans';
+    color: #000000;
+    background: #ff001b;
+    border-radius: 12px;
+    height: 43px;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 10px;
+    margin-top: 13px;
+}
+#emailCliente{
+    font-size: 13px;
+    color: #000000;
+}
+#telefoneCampo{
+    font-family: 'Open Sans';
+    color: #000000;
+    background: #ff001b;
+    border-radius: 12px;
+    font-size: 15px;
+    height: 43px;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 10px;
+    margin-top: 13px;
+}
+#telefoneCliente{
+    font-size: 13px;
+    color: #000000;
+}
+#responsavelCliente{
+    font-size: 13px;
+    color: #000000;
+}
+#creditosPaginas{
+    font-size: 13px;
+    color: #000000;
+}
+#responsavelCampo{
+    font-family: 'Open Sans';
+    color: #ffffff;
+    background: #ff001b;
+    border-radius: 12px;
+    height: 43px;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 10px;
+    margin-top: 13px;
+}
+#creditosPaginasCampo{
+    font-family: 'Open Sans';
+    color: #000000;
+    background: #ff001b;
+    border-radius: 12px;
+    height: 43px;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 10px;
+    margin-top: 13px;
+}
+/* Fim dos estilos para a página de visualizar cliente */
+
+/*Estilos para a página de Login*/
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+
+.Login{
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 550px;
+    height: 330px;
+    border-radius: 15px;
+    color:#000000;
+    border-width: 1px;
+    border-color: #00000033;
+    border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 59px;
+    background-color: #ffffff;
+    margin: 50px auto; /* Alterado para centralizar verticalmente e horizontalmente */
+}
+.entrar{
+    font-family: 'Open Sans';
+    font-weight: bolder;
+    font-size: 20px;
+}
+/*Fim dos estilos da página de login*/
+/*Estilos para a página editar*/
+#pageTitleEditar{
+    color: #000000;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    margin-top: -37px;
+}
+/*estilos para pagina de sobre a pitang*/
+.sobrepitang{
+    /*background-color: #ffffff;*/
+    border-style: solid;
+    border-width: 1px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 0px #ff0000;
+    font-family: 'Open Sans';
+    color:#000000;
+    
+    text-align: justify; /* Alinha o texto justificado */
+    
+}
+/*fim estilo sobre a pitang*/
+
+/*Estilos da página de contato*/
+.informacoes{
+    border-style: solid;
+    border-width: 1px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-radius: 40px;
+    box-shadow: 6px 6px 0px #ff0000;
+    height: 370px;
+    color: #000000;
+    font-family: 'Open Sans';
+    
+    padding: 40px 60px;
+    text-align: justify; /* Alinha o texto justificado */
+    
+
+}
+
+.informacoes div{
+    margin-bottom: 10px;
+    gap: 20px;
+}
+/* Estilos para a seção de redes sociais */
+.redes_sociais {
+    margin-top: 30px;
+    display: flex;
+    align-items: end;
+}
+
+/* Estilos para o título das redes sociais */
+.redes_titulo {
+    padding-bottom: 10px;
+    /* Centraliza o título horizontalmente */
+    display: flex;
+    text-align: end;
+}
+
+/* Estilos para os ícones das redes sociais */
+.redes_sociais a {
+    display: inline-block;
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.links{
+    display: flex;
+}
+.redes_sociais img {
+    width: 35px; /* Define uma largura padrão para os ícones */
+    height: 35px; /* Define uma altura padrão para os ícones */
+  
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+
+/* Efeito de hover nos ícones */
+.redes_sociais img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para campos de entrada de texto e número em formulários, incluindo largura, preenchimento, margem inferior, borda e borda arredondada. */
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para botões de envio em formulários, incluindo cor de fundo, cor do texto, remoção de borda, preenchimento, cursor, borda arredondada e margem inferior. */
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para tabelas, incluindo largura, colapso de borda e margem superior. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+/* Estilos para células de tabela (th e td), incluindo borda e preenchimento. */
+table, th, td {
+    border: 1px solid #000000;
+}
+
+/* Estilos para cabeçalhos de tabela (th) e células de tabela (td), incluindo preenchimento e alinhamento do texto à esquerda. */
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para a entrada de filtro "filtroCnpjNome", incluindo largura, preenchimento, margem inferior, borda e borda arredondada. */
+
+
+
+/*Sobre a pitang*/
+.Texto_sobre{
+    font-family: 'Open Sans';
+}
+
+/* Estilos para botões, incluindo cor de fundo, cor do texto, remoção de borda, preenchimento, cursor, borda arredondada, margem inferior e tamanho de fonte. */
+button {
+    background-color: #ff001e; /* Cor de fundo do botão (vermelho) */
+    color: #fff; /* Cor do texto do botão (branco) */
+    border: none; /* Remover borda */
+    padding: 8px 20px; /* Tamanho dos botões (ajuste conforme necessário) */
+    border-radius: 12px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de apontar */
+    margin-bottom: 10px; /* Espaçamento abaixo do botão */
+    font-size: 14px; /* Tamanho da fonte (ajuste conforme necessário) */
+    margin-right: 660px; /* Espaçamento entre os botões (ajuste conforme necessário) */
+    min-width: 130px;
+    font-family: 'Open Sans';
+    transition: background-color, 0.15s;
+}
+
+
+/* Estilizar o botão quando passar o mouse sobre ele */
+#cadastrarClienteBtn:hover, #excluirClientesBtn:hover, #editarClienteBtn:hover, #salvarBtn:hover, #submit:hover, #entrarBtn:hover{
+    background: #ff7c7c; /* Altere a cor quando o mouse estiver sobre o botão */
+    color: #ffffff;
+}
+#editarClienteBtn:active{
+    background-color: #ff7c7c;
+    
+}
+/* Estilos para o container dos botões (para alinhá-los lado a lado) */
+.botoes {
+    display: flex; /* Exibir os botões em uma linha */
+    align-items: center; /* Alinhar verticalmente ao centro (opcional) */
+}
+
+/* Estilos gerais para campos de entrada de texto e botões, incluindo largura, preenchimento, margem inferior, borda, borda arredondada e tamanho de fonte. */
+input[type="nome"],
+input[type="email"],
+input[type="tel"],
+input[type="credito"], input[type="endereco"], input[type="cnpj"], input[type="responsavel"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    box-shadow: 6px 4px 0px #ff0000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para cabeçalhos (h1), incluindo tamanho de fonte e margem inferior. */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/*Estilos para visualizar os dados do cliente */
+.infoCampo {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 8px; /* Adiciona espaçamento entre o texto e a borda */
+    background: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    box-shadow: 6px 4px 0px #ff0000;
+    height: 43px;
+    margin: 10px 0; /* Adiciona espaçamento entre cada parágrafo */
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto e as informações */
+    justify-content: flex-start; /* Ajusta o alinhamento para mostrar as informações após o rótulo */
+}
+
+.infoCampo strong {
+    margin-right: 10px; /* Adiciona espaço entre o rótulo e as informações */
+}
+
+.infoCampo span {
+    color: #fff;
+    font-size: 13px;
+    max-width: 800px;
+}
+
+/*Fim dos estilos para visualizar os dados do cliente */
+
+/* Estilo para rodapé*/
+footer.rodape {
+    background-color: #d34c2a;
+    color: white;
+    font: 14px 'Open Sans', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rodape-div-1,
+.rodape-div-2 {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-div-1 p,
+.rodape-div-2 p {
+    margin: 5px 0;
+}
+
+
+.redes_sociais.informacoes_de_contato .links a {
+    text-decoration: none;
+}
+
+.rodape-direitos {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.redes_sociais_brancas .links a {
+    margin-right: 10px;
+}
+
+.logo1 {
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    height: 45px;
+}
+
+
+a {
+    text-decoration: none; /* Remove a decoração padrão dos links */
+    
+}
